@@ -36,14 +36,7 @@ function submitForm() {
 		jobseekers.push(jobseeker);
 
 		// Show the completion page
-		var newContent = "";
-		newContent += "<h2>Process complete!<h2>";
-		newContent += "<h3>Here is your video:</h3>";
-		
-		newContent += "<div>";
-			newContent += "<video controls id=\"vid\" width=\"1280px\" height=\"720px\" src=\"" + jobseeker.video_link + "\" autoplay repeat></video>";
-		newContent += "</div>";
-		document.getElementById("content").innerHTML = newContent;
+		showSeeker(jobseekers.length - 1);
 	}
 }
 
