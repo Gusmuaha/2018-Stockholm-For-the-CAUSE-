@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Cause</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css" src="./style.css"></style>
+	</head>
+	<body>
+		<div class="position_center">
+			<header>
+				<h1>JobTech job application plug-in EV</h1>
+				<h3>Demo by the team: "For the Cause!!"</h3>
+			</header>
 
-<head>
-	<title>Cause</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css" src="./style.css"></style>
-</head>
-
-<body>
-	<div class="position_center">
-		<header>
-			<h1>JobTech job application plug-in EV</h1>
-			<h3>Demo by the team: "For the Cause!!"</h3>
-		</header>
-
-		<div id="content">
-			<h1 id="heading">Hello, job seeker!</h1>
-			<h2>Please complete this form.</h2>
-			<h2></h2>
-			<h3>Insert the video urlin the feild below</h3>
-			<input type="text" id="video_url">
-			<br>
-			<h3>My competences</h3>
-			<p>First: <input type="text" id="comp1"></p>
-			<p>Second: <input type="text" id="comp2"></p>
-			<p>Third: <input type="text" id="comp3"></p>
-			<br>
-			<input type="submit" text="Submit!" onclick="submitForm();"></input>
-		</div>
-		<button type="button" onclick="showSeekers();">Show All Jobseekers!</button>
-		<button type="button" onclick="showForm();">Register As A Jobseeker!</button>
-	</div>
-</body>
-<script type="text/javascript" src="cause.js"></script>
-
-<foot>
-	<div _ngcontent-c0="" class="footer">
-		<app-footer _ngcontent-c0="" _nghost-c2="">
-			<div _ngcontent-c2="" class="p-3 bg-dark text-light">
-				<div _ngcontent-c2="" class="column">
-					<span _ngcontent-c2="" class="mr-2">Follow ous sponsors:</span>
-					<a _ngcontent-c2="" href="https://jobtechdev.se/home" target="_blank">
-						<img _ngcontent-c2="" alt="JobTech" class="case" src="./media src/jobtechlogo.png"></a>
-					<a _ngcontent-c2="" href="https://openhack.io" target="_blank">
-						<img _ngcontent-c2="" alt="OpenHack" class="NPO" src="./media src/openhacklogo.png"></a>
-					<div _ngcontent-c2="" class="contact">
-						<span _ngcontent-c2="" class="mr-3">Team: For the Cause:</span>
-						<a _ngcontent-c2="" href="mailto:contact@jobtechdev.se">
-							<img _ngcontent-c2="" class="email" src="./media src/emaillogo.png"></a>
-					</div>
-				</div>
+			<div id="content">
 			</div>
-		</app-footer>
-	</div>
-</foot>
+			<button type="button" onclick="showSeekers();">Show All Jobseekers!</button>
+			<button type="button" onclick="showForm();">Register As A Jobseeker!</button>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="cause.js"></script>
 
+		<foot>
+			<div _ngcontent-c0="" class="footer">
+				<app-footer _ngcontent-c0="" _nghost-c2="">
+					<div _ngcontent-c2="" class="p-3 bg-dark text-light">
+						<div _ngcontent-c2="" class="column">
+							<span _ngcontent-c2="" class="mr-2">Follow our sponsors:</span>
+							<a _ngcontent-c2="" href="https://jobtechdev.se/home" target="_blank">
+								<img _ngcontent-c2="" alt="JobTech" class="case" src="./media src/jobtechlogo.png"></a>
+							<a _ngcontent-c2="" href="https://openhack.io" target="_blank">
+								<img _ngcontent-c2="" alt="OpenHack" class="NPO" src="./media src/openhacklogo.png"></a>
+							<div _ngcontent-c2="" class="contact">
+								<span _ngcontent-c2="" class="mr-3">Team: For the Cause!</span>
+								<a _ngcontent-c2="" href="mailto:contact@jobtechdev.se">
+									<img _ngcontent-c2="" class="email" src="./media src/emaillogo.png"></a>
+							</div>
+						</div>
+					</div>
+				</app-footer>
+			</div>
+		</foot>
+
+	</body>
 </html>

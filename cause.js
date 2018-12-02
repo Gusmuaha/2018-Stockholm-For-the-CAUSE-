@@ -24,7 +24,6 @@ function readForm() {
 }
 
 var jobseekers = [];
-var companies = [];
 
 function submitForm() {
 
@@ -42,7 +41,7 @@ function submitForm() {
 		newContent += "<h3>Here is your video:</h3>";
 		
 		newContent += "<div>";
-			newContent += "<video id=\"vid\" width=\"1280px\" height=\"720px\" src=\"" + jobseeker.video_link + "\" autoplay repeat></video>";
+			newContent += "<video controls id=\"vid\" width=\"1280px\" height=\"720px\" src=\"" + jobseeker.video_link + "\" autoplay repeat></video>";
 		newContent += "</div>";
 		document.getElementById("content").innerHTML = newContent;
 	}
@@ -58,6 +57,7 @@ function showSeeker(n) {
 		}
 	newContent += "</p>";
 	newContent += "<video controls id=\"vid\" width=\"1280px\" height=\"720px\" src=\"" + jobseeker.video_link + "\" autoplay repeat></video>";
+	document.getElementById("content").innerHTML = newContent;
 }
 
 function showSeekers() {
@@ -77,8 +77,10 @@ function showSeekers() {
 }
 
 function showForm() {
-	document.getElementById("content").innerHTML = "<h1 id=\"heading\">Hello, job seeker!</h1> <h2>Please complete this form.</h2><h3>My video</h3> <input type=\"text\" id=\"video_url\"> <br> <h3>My competences</h3> <p>First: <input type=\"text\" id=\"comp1\"></p> <p>Second: <input type=\"text\" id=\"comp2\"></p> <p>Third: <input type=\"text\" id=\"comp3\"></p> <br> <input type=\"submit\" text=\"Submit!\" onclick=\"submitForm();\"></input>"
+	document.getElementById("content").innerHTML = "<h1 id=\"heading\">Hello, job seeker!</h1> <h2>Please complete this form.</h2><h3>My video</h3> <input type=\"text\" id=\"video_url\"> <br> <h3>My competences</h3> <p>First: <input type=\"text\" id=\"comp0\"></p> <p>Second: <input type=\"text\" id=\"comp1\"></p> <p>Third: <input type=\"text\" id=\"comp2\"></p> <br> <input type=\"submit\" text=\"Submit!\" onclick=\"submitForm();\"></input>"
 }
+
+// 
 $(document).on("change", ".file_multi_video", function(evt) {
 	var $source = $('#video_here');
 	$source[0].src = URL.createObjectURL(this.files[0]);
