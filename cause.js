@@ -49,7 +49,7 @@ function showSeeker(n) {
 	newContent += "<div>";
 	newContent += "<p class=\"competences\">";
 		for (var i = 0; i < jobseeker.competences.length; i++) {
-			newContent += jobseeker.competences[i] + "<br>";
+			newContent += "#" + jobseeker.competences[i] + " ";
 		}
 	newContent += "</p>";
 	newContent += "<video controls id=\"vid\" width=\"1280px\" height=\"720px\" src=\"" + jobseeker.video_link + "\" autoplay repeat></video>";
